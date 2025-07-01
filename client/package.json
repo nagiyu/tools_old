@@ -4,6 +4,9 @@
     "@mantine/core": "^8.1.2",
     "@mantine/hooks": "^8.1.2"
   },
+  "scripts": {
+    "start": "vite --host 0.0.0.0 --port 53859"
+  },
   "devDependencies": {
     "@types/node": "24.0.10",
     "typescript": "5.8.3"
