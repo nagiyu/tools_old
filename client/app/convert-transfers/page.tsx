@@ -24,8 +24,21 @@ export default function ConvertTransfers() {
         </button>
       </div>
       <div className={styles.tabContent}>
-        {activeTab === 'Before' && <div>{/* Before tab content goes here */}</div>}
-        {activeTab === 'After' && <div>{/* After tab content goes here */}</div>}
+        {activeTab === 'Before' && (
+  <div>
+    <textarea rows={10} cols={50} />
+    <br />
+    <button onClick={() => {}}>Read</button>
+    <button onClick={() => {}}>Convert</button>
+  </div>
+)}
+        {activeTab === 'After' && (
+  <div>
+    <textarea rows={10} cols={50} />
+    <br />
+    <button onClick={() => {}}>Copy</button>
+  </div>
+)}
       </div>
     </div>
   );
