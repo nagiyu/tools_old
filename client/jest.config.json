@@ -1,0 +1,10 @@
+{
+  "testEnvironment": "jsdom",
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+  "testMatch": ["**/*.test.tsx"],
+  "transform": {
+    "^.+\\.(ts|tsx|js|jsx)$": "babel-jest",
+    "^.+\\.module\\.css$": "<rootDir>/jest-css-transformer.js"
+  }
+}
+
