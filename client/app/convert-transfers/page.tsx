@@ -22,8 +22,8 @@ export default function ConvertTransfers() {
         </button>
       </div>
       <div className={styles.tabContent}>
-        {activeTab === 'Before' && <div>Before content is empty for now.</div>}
-        {activeTab === 'After' && <div>After content is empty for now.</div>}
+        {activeTab === 'Before' && <div>{/* Before tab content goes here */}</div>}
+        {activeTab === 'After' && <div>{/* After tab content goes here */}</div>}
       </div>
     </div>
   );
