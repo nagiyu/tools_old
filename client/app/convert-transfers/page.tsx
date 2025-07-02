@@ -15,6 +15,7 @@ export default function ConvertTransfers() {
           <Tabs.Tab value="Before">Before</Tabs.Tab>
           <Tabs.Tab value="After">After</Tabs.Tab>
         </Tabs.List>
+
         <Tabs.Panel value="Before">
           <Textarea rows={10} />
           <Button onClick={() => {}}>Read</Button>
@@ -25,16 +26,7 @@ export default function ConvertTransfers() {
           <Textarea rows={10} />
           <Button onClick={() => {}}>Copy</Button>
         </Tabs.Panel>
-)}
-        {activeTab === 'After' && (
-  <div>
-    <textarea rows={10} cols={50} />
-    <br />
-    <button onClick={() => {}}>Copy</button>
-  </div>
-)}
       </Tabs>
-      </div>
     </div>
   );
 }
