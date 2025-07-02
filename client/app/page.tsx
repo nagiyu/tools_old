@@ -11,6 +11,9 @@ export default function Home() {
           <Link href="/convert-transfers">
             <a className={styles.primary}>乗り換え変換ツール</a>
           </Link>
+          <Link href="/create-biography">
+            <a className={styles.primary}>参考文献つくーる</a>
+          </Link>
         </div>
       </main>
     </div>
