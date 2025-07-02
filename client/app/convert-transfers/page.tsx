@@ -10,7 +10,7 @@ export default function ConvertTransfers() {
   return (
     <div className={styles.page}>
       <h1>乗り換え変換ツール</h1>
-      <Tabs value={activeTab} onTabChange={(value) => setActiveTab(value as 'Before' | 'After')}>
+      <Tabs value={activeTab} onChange={(value) => setActiveTab(value as 'Before' | 'After')}>
         <Tabs.List>
           <Tabs.Tab value="Before">Before</Tabs.Tab>
           <Tabs.Tab value="After">After</Tabs.Tab>
