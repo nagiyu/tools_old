@@ -23,9 +23,16 @@ export default function ConvertTransfers() {
     }
   };
 
-  // Convert button handler: currently no conversion, just copy beforeText to afterText
+  // Convert button handler: convert beforeText using specified slice and replace
   const handleConvert = () => {
-    setAfterText(beforeText);
+    const startIndex = beforeText.indexOf('■');
+    const endIndex = beforeText.indexOf('(運賃内訳)');
+    if (startIndex !== -1 && endIndex !== -1 && startIndex < endIndex) {
+      const converted = beforeText.slice(startIndex, endIndex).replace('---\n', '');
+      setAfterText(converted);
+    } else {
+      setAfterText(beforeText); // fallback to original if markers not found
+    }
     setActiveTab('After');
   };
 
