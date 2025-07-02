@@ -3,3 +3,32 @@
   padding: 20px;
 }
 
+.tabs {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.tabButton {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.tabButton:hover {
+  background-color: #e0e0e0;
+}
+
+.activeTab {
+  background-color: #0070f3;
+  color: white;
+  border-color: #0070f3;
+}
+
+.tabContent {
+  margin-top: 20px;
+  font-size: 16px;
+}
