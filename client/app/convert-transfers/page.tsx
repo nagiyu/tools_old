@@ -1,4 +1,6 @@
+"use client";
 import { useState } from 'react';
+
 import styles from './page.module.css';
 
 export default function ConvertTransfers() {
@@ -9,13 +11,13 @@ export default function ConvertTransfers() {
       <h1>乗り換え変換ツール</h1>
       <div className={styles.tabs}>
         <button
-          className={activeTab === 'Before' ? styles.activeTab : ''}
+          className={`${styles.tabButton} ${activeTab === 'Before' ? styles.activeTab : ''}`}
           onClick={() => setActiveTab('Before')}
         >
           Before
         </button>
         <button
-          className={activeTab === 'After' ? styles.activeTab : ''}
+          className={`${styles.tabButton} ${activeTab === 'After' ? styles.activeTab : ''}`}
           onClick={() => setActiveTab('After')}
         >
           After
