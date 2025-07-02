@@ -40,6 +40,7 @@ export default function ConvertTransfers() {
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(afterText);
+      alert('コピーに成功しました');
     } catch (error) {
       console.error('Failed to write clipboard:', error);
     }
