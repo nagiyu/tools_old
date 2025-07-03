@@ -28,23 +28,24 @@ export default function Page() {
     url: "",
     pageName: "",
     siteName: "",
-    accessDate: "",
+    accessDate: new Date().toISOString().split("T")[0],
   });
 
   const [bookPaperData, setBookPaperData] = useState<BookPaperData>({
     title: "",
     author: "",
     publishDate: "",
-    accessDate: "",
+    accessDate: new Date().toISOString().split("T")[0],
   });
 
   const [convertedText, setConvertedText] = useState<string>("");
 
   const clearData = () => {
+    const today = new Date().toISOString().slice(0, 10);
     if (mode === "Webページ") {
-      setWebPageData({ url: "", pageName: "", siteName: "", accessDate: "" });
+      setWebPageData({ url: "", pageName: "", siteName: "", accessDate: today });
     } else {
-      setBookPaperData({ title: "", author: "", publishDate: "", accessDate: "" });
+      setBookPaperData({ title: "", author: "", publishDate: "", accessDate: today });
     }
   };
 
