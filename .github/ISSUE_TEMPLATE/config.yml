@@ -1,7 +1,0 @@
-blank_issues_enabled: true
-contact_links:
-
-defaults:
-  - template: "client.md"
-    name: "Client Issue"
-    about: "Client 関連の修正に関する Issue"
