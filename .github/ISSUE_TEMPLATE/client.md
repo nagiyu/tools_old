@@ -1,8 +1,8 @@
 ---
-name: OpenHands Issue
-about: OpenHands 用のテンプレート
-title: ""
-labels: []
+name: Client Issue
+about: Client 用のテンプレート
+title: "[Client] "
+labels: ["client"]
 assignees: []
 ---
 
