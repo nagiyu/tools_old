@@ -41,10 +41,11 @@ export default function Page() {
   const [convertedText, setConvertedText] = useState<string>("");
 
   const clearData = () => {
+    const today = new Date().toISOString().slice(0, 10);
     if (mode === "Webページ") {
-      setWebPageData({ url: "", pageName: "", siteName: "", accessDate: "2025-07-03" });
+      setWebPageData({ url: "", pageName: "", siteName: "", accessDate: today });
     } else {
-      setBookPaperData({ title: "", author: "", publishDate: "", accessDate: "2025-07-03" });
+      setBookPaperData({ title: "", author: "", publishDate: "", accessDate: today });
     }
   };
 
