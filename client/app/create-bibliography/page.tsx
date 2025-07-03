@@ -176,11 +176,35 @@ export default function Page() {
           )}
 
           <div>
-            <button onClick={() => {}}>
+            <button onClick={handleConvert}>
               Convert
             </button>
             <button onClick={clearData}>Clear</button>
           </div>
+
+        </div>
+      )}
+
+  const handleConvert = () => {
+    let result = "";
+    if (mode === "Webページ") {
+      result = [
+        `『${webPageData.pageName}』`,
+        webPageData.siteName,
+        webPageData.url,
+        webPageData.accessDate,
+      ].join(", ");
+    } else if (mode === "書籍" || mode === "論文") {
+      result = [
+        `『${bookPaperData.title}』`,
+        bookPaperData.author.split(",").map((author) => author.trim()).join(", "),
+        bookPaperData.publishDate,
+        bookPaperData.accessDate,
+      ].flat().join(", ");
+    }
+    setConvertedText(result);
+    setTab("after");
+  }
         </div>
       )}
 
