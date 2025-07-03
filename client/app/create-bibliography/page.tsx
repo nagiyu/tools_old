@@ -28,14 +28,14 @@ export default function Page() {
     url: "",
     pageName: "",
     siteName: "",
-    accessDate: "2025-07-03",
+    accessDate: new Date().toISOString().split("T")[0],
   });
 
   const [bookPaperData, setBookPaperData] = useState<BookPaperData>({
     title: "",
     author: "",
     publishDate: "",
-    accessDate: "2025-07-03",
+    accessDate: new Date().toISOString().split("T")[0],
   });
 
   const [convertedText, setConvertedText] = useState<string>("");
